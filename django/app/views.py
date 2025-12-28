@@ -14,3 +14,10 @@ def about(request):
 def home_template(request):
     """Home page view using a template"""
     return render(request, 'app/home.html')
+
+def about_template(request):
+    """About page view using a template"""
+    return render(request, 'app/about.html')
+def contact_template(request):
+    """Contact page view using a template"""
+    return render(request, 'app/contact.html')
