@@ -21,3 +21,31 @@ def about_template(request):
 def contact_template(request):
     """Contact page view using a template"""
     return render(request, 'app/contact.html')
+
+def running_index(request):
+    """Running template index page"""
+    return render(request, 'running/index.html')
+
+def running_about(request):
+    """Running template about page"""
+    return render(request, 'running/about.html')
+
+def running_blog(request):
+    """Running template blog page"""
+    return render(request, 'running/blog.html')
+
+def running_blog_single_post(request):
+    """Running template blog single post page"""
+    return render(request, 'running/blogsinglepost.html')
+
+def running_contact(request):
+    """Running template contact page"""
+    return render(request, 'running/contact.html')
+
+def running_running(request):
+    """Running template running page"""
+    return render(request, 'running/running.html')
+
+def running_running_single_post(request):
+    """Running template running single post page"""
+    return render(request, 'running/runningsinglepost.html')
