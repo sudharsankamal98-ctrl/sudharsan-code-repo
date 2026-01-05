@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - BookEase{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to BookEase!</h1>
+    <p class="welcome-message">
+        Your one-stop solution for all booking needs. Book hotels, events, appointments, and more with ease.
+    </p>
+    <p>
+        BookEase simplifies the booking process with our user-friendly platform. Whether you're planning a vacation,
+        scheduling a meeting, or reserving a spot at your favorite restaurant, we've got you covered.
+    </p>
+
+    <div class="nav-links">
+        <a href="{% url 'services' %}">Our Services</a>
+        <a href="{% url 'portfolio' %}">Success Stories</a>
+        <a href="{% url 'blog' %}">Booking Tips</a>
+        <a href="{% url 'contact' %}">Get Started</a>
+        <a href="/admin/">Admin Panel</a>
+    </div>
+</div>
+{% endblock %}
